@@ -7,6 +7,8 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
+##Set the page configuration of the' streamlint 'application, including page titles and icons.
+
 st.set_page_config(
     page_title="Luxury Watches",
     page_icon="⌚",
