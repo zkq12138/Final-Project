@@ -4,6 +4,8 @@ from log_reg import log_reg
 import plotly.express as px
 import plotly.graph_objects as go
 import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
 
 st.set_page_config(
     page_title="Luxury Watches",
