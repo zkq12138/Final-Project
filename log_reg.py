@@ -27,4 +27,4 @@ def log_reg():
         else:
             st.error('Login parameters are incorrect, please try again')
             st.stop()
-#Author:Shengbin Liang and Kaiqi Zhou
+#Author:Shengbin Liang and Xiuqi Liang
