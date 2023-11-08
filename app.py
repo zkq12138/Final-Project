@@ -84,7 +84,7 @@ else:##If there is user information, a different option menu will be displayed.
             df = pd.concat([df, data[[col, "Price"]].groupby(col).mean()], axis=1)##Traverse through three different material types.
         df.columns = ['Case material', 'Bracelet material', 'Lunette Material']
         fig = go.Figure()
-##Add a line chart trajectory to display the average price distribution of different material types.
+##Add three line chart trajectory to display the average price distribution of different material types.
         fig.add_trace(go.Scatter(
             x=df.index,
             y=df["Case material"],
