@@ -20,6 +20,7 @@ if 'data' not in st.session_state:
 else:
     data = st.session_state["data"]
 ##Check if user information exists in the session state.
+##Author: Tianxiang Liu
 if "user" not in st.session_state:
     log_reg()
 else:##If there is user information, a different option menu will be displayed.
@@ -49,6 +50,7 @@ else:##If there is user information, a different option menu will be displayed.
             size_max=50,
         )
         st.plotly_chart(fig, theme="streamlit", use_container_width=True)
+ #Author: Hongcheng Fu
         st.text_area(
             "desc2",
             "In the bar chart below, the main contents analyzed are: \n    Explore the top watches in the average "
@@ -70,6 +72,7 @@ else:##If there is user information, a different option menu will be displayed.
         if st.button("Log out", type="primary"):
             st.session_state.pop('user')
             st.experimental_rerun()
+  #Author: Yangjun Gai         
     elif selected == 'Material analysis':##If the user selects the' Material analysis' option, material analysis will be performed. 
         st.text_area(
             "desc3",
@@ -104,6 +107,7 @@ else:##If there is user information, a different option menu will be displayed.
             name='Lunette Material'))
         st.plotly_chart(fig, use_container_width=True)##Draws a line chart in the application.
         ## If the "Log out" button is clicked, the user information in the session state is cleared and the application is rerun.
+    #Author: Kaiqi Zhou
         if st.button("Log out", type="primary"):
             st.session_state.pop('user')
             st.experimental_rerun()
