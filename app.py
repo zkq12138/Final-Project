@@ -103,6 +103,7 @@ else:##If there is user information, a different option menu will be displayed.
             mode='lines+markers',
             name='Lunette Material'))
         st.plotly_chart(fig, use_container_width=True)##Draws a line chart in the application.
+        ## If the "Log out" button is clicked, the user information in the session state is cleared and the application is rerun.
         if st.button("Log out", type="primary"):
             st.session_state.pop('user')
             st.experimental_rerun()
